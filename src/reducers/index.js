@@ -22,7 +22,7 @@ const reducer = (state, action) => {
         case(ADD_ONE):
             return({
                 ...state,
-                total: state.total + 1
+                total: state.total + action.payload
             });
 
         case(APPLY_NUMBER):
